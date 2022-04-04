@@ -4,7 +4,7 @@ import './lights.css';
 import Light from '../Light/light';
 
 
-const Lights = (lights)=>{
+const Lights = ({lights})=>{
     return(
         <div className="lights">
             <Light name = {lights.name} state = {lights.state}/>

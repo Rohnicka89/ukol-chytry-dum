@@ -4,7 +4,7 @@ import './light.css'
 import lightOn from './img/light-on.svg'
 import lightOff from './img/light-off.svg'
 
-const Light = (name,state)=>{
+const Light = ({name,state})=>{
 
     const [lOn, setLOn] = useState({state})
 
