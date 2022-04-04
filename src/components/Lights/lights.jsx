@@ -7,7 +7,9 @@ import Light from '../Light/light';
 const Lights = ({lights})=>{
     return(
         <div className="lights">
-            <Light name = {lights.name} state = {lights.state}/>
+            {lights.map( (item)=>{
+                return(<Light name = {item.name} state = {item.state} key = {item.name}/>)})
+            }
 		</div>
     )
 }
