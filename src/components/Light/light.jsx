@@ -9,7 +9,7 @@ const Light = ({name,state})=>{
     const [lOn, setLOn] = useState({state})
 
     const handleClick = ()=>{
-        if (state === 'off'){
+        if (lOn === 'off'){
             setLOn('on')
         } else{
             setLOn('off')

@@ -18,10 +18,10 @@ export const smartHomeData = [
 			state: 'off',
 		},
 	],
-	climate: {
+	climate: [{
 		temperature: 24,
 		humidity: 50,
-	},
+	}],
 	blinds: 'open',
 	energyConsumption: {
 		electricity: 36.7,
