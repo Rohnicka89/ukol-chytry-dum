@@ -13,7 +13,7 @@ const Energy = ({electricity,water})=>{
 					</div>
 					<div className="energy__consumption">
 						<div className="energy__description">Elektřina</div>
-						<div className="energy__value">{electricity}/div>
+						<div className="energy__value">{electricity}</div>
 					</div>
 				</div>
 				<div className="energy__source">
@@ -26,7 +26,6 @@ const Energy = ({electricity,water})=>{
 					</div>
 				</div>
 			</div>
-		</div>
     )
 }
 
