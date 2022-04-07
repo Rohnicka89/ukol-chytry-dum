@@ -8,12 +8,12 @@ import Energy from '../Energy/energy';
 const Dashboard = ({data})=>{
     return(
     <main className="dashboard">
-        {data.map(item => <Lights lights={item.lights}/>)}
-        {/* <Climate temperature={data.climate.temperature} 
-                     humidity={data.climate.humidity}/> */}
+        <Lights lights={data.lights}/>
+        <Climate temperature={data.climate.temperature} 
+                humidity={data.climate.humidity}/> 
         <Blinds state={data.blinds}/>
         <Energy electricity={data.energyConsumption.electricity}
-                water={data.energyConsumption.water}/>
+                water={data.energyConsumption.water}/> 
 
     </main>
     )

@@ -6,7 +6,7 @@ import blindsClosed from './Img/blinds-closed.svg';
 
 const Blinds = ({state})=>{
 
-	const [blindState, setBlindState] = useState({state})
+	const [blindState, setBlindState] = useState(state)
 
 	const handleClick = ()=>{
 		if(blindState === 'closed'){

@@ -1,4 +1,4 @@
-export const smartHomeData = [
+export const smartHomeData = 
 {
 	lights: [
 		{
@@ -28,6 +28,6 @@ export const smartHomeData = [
 		water: 14.1,
 	}
 }
-];
+;
 
 export default smartHomeData;

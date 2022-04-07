@@ -6,7 +6,7 @@ import lightOff from './img/light-off.svg'
 
 const Light = ({name,state})=>{
 
-    const [lOn, setLOn] = useState({state})
+    const [lOn, setLOn] = useState(state)
 
     const handleClick = ()=>{
         if (lOn === 'off'){

@@ -7,7 +7,7 @@ import tempImg from './img/temp.svg';
 
 const Climate = ({temperature,humidity})=>{
 
-	const [tempCh, setTempCh] = useState({temperature})
+	const [tempCh, setTempCh] = useState(temperature)
 
 
     return(
@@ -17,7 +17,7 @@ const Climate = ({temperature,humidity})=>{
 				</div>
 				<div className="climate__content">
 					<div className="climate__temperature">{tempCh}&deg;C</div>
-					<div className="climate__humidity">Vlhost vzduchu 51&nbsp;%</div>
+					<div className="climate__humidity">Vlhkost vzduchu {humidity}&nbsp;%</div>
 				</div>
 				<div className="climate__controls">
 					<button onClick={()=>{setTempCh(tempCh+1)}} className="button">+</button>
